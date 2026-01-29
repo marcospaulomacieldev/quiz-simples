@@ -18,25 +18,164 @@
         </section>
         <!--Pergunta 1-->
         <section>
-            <h2>Pergunta 1: Qual é o valor de 3^2 + 2*5</h2>
+            <h2>Pergunta 1: Qual é o valor de 3<sup>2</sup> + 2 &middot; 5</h2>
             <form>
                 <input type="radio" value="55" id="p1a" name="pergunta1">
-                <label for="p1a">55</label>
+                <label for="p1a">55</label><br>
                 <input type="radio" value="19" id="p1b" name="pergunta1">
-                <label for="p1c">19</label>
+                <label for="p1c">19</label><br>
                 <input type="radio" value="36" id="p1c" name="pergunta1">
-                <label for="p1c">36</label>
+                <label for="p1c">36</label><br>
                 <input type="radio" value="16" id="p1d" name="pergunta1">
-                <label for="p1d">16</label>
+                <label for="p1d">16</label><br>
             </form>
         </section>
         <!--Pergunta 2-->
         <section>
-            
+            <h2>Pergunta 2: Como se chama o número que possui extamente dois divisores?</h2>
+            <form>
+                <input type="text" required id="p2" name="pergunta2" placeholder="Digite sua resposta">
+            </form>
+        </section>
+        <!--Pergunta 3-->
+        <section>
+            <h2>Pergunta 3: Assinale os números que sao multiplos comuns de 4, 10 e 15</h2>
+            <form>
+                <input type="checkbox" id="p5a" name="pergunta5" value="120">
+                <label for="p5a">120</label><br>
+                <input type="checkbox" id="p5b" name="pergunta5" value="630">
+                <label for="p5a">630</label><br>
+                <input type="checkbox" id="p5c" name="pergunta5" value="180">
+                <label for="p5a">180</label><br>
+                <input type="checkbox" id="p5d" name="pergunta5" value="260">
+                <label for="p5a">260</label><br>
+            </form>
+        </section>
+        <!--Pergunta 4-->
+        <section>
+            <h2>Pergunta 4: Determine todas as raizes reais da equação x<sup>3</sup> - 6x<sup>2</sup> + 11x - 6 = 0. Faça o upload de uma arquivo contendo a resolução completa</h2>
+            <form>
+                <input type="file" id="p4" name="pergunta4">
+            </form>
+        </section>
+        <!--Pergunta 5-->
+        <section>
+            <h2>Pergunta 5: Qual matemático grego é conhecido por suas contribuições ao cálculo de áreas e volumes e pelo princípio que leva seu nome?</h2>
+            <form>
+                <select name="pergunta7" id="p7">
+                    <option value="Pitágoras">Pitágoras</option>
+                    <option value="Arquimedes">Arquimedes</option>
+                    <option value="Tales">Tales</option>
+                    <option value="Euclides">Euclides</option>
+                </select>
+            </form>
+        </section>
+        <!--Pergunta 6-->
+        <section>
+            <h2>Pergunta 6: Encontre o valores de x e y da imagem abaixo</h2>
+            <figure>
+                <img src="./assets/imagemex6.png" alt="Retangulo de altura x e comprimento y área de 600 m^2 e perimetro de 100 m">
+                <figcaption>Figura da questão 6</figcaption>
+            </figure>
+            <form>
+                <label for="p6x">Valor de x: </label>
+                <input type="number" required id="p6x" name="pergunta6_x" placeholder="digite o valor de x"><br>
+                <label for="p6x">Valor de y: <label>
+                <input type="number" required id="p6y" name="pergunta6_y" placeholder="digite o valor de y"><br>
+            </form>
+        </section>
+        <!--Tabela com sistema de pontuação-->
+        <section>
+            <h2>Sistema de pontuação</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th><strong>Pergunta</strong></th>
+                        <th><strong>tipo</strong></th>
+                        <th><strong>Pontos</strong></th>
+                        <th><strongd>Dificuldade</strongd></strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--Linha 1-->
+                    <tr>
+                        <td>1</td>
+                        <td>Múltpla escolha</td>
+                        <td>10</td>
+                        <td>Fácil</td>
+                    </tr>
+                    <!--Linha 2-->
+                    <tr>
+                        <td>2</td>
+                        <td>Texto</td>
+                        <td>10</td>
+                        <td>Fácil</td>
+                    </tr>
+                   <!--Linha 3-->
+                    <tr>
+                        <td>3</td>
+                        <td>Múltipla seleção</td>
+                        <td>15</td>
+                        <td>Média</td>
+                    </tr>
+                    <!--Linha 4-->
+                    <tr>
+                        <td>4</td>
+                        <td>Upload de arquivo</td>
+                        <td>25</td>
+                        <td>Difícil</td>
+                    </tr>
+                    <!--Linha 5-->
+                    <tr>
+                        <td>5</td>
+                        <td>Lista suspensa</td>
+                        <td>15</td>
+                        <td>Média</td>
+                    </tr>
+                    <!--Linha 6-->
+                    <tr>
+                        <td>6</td>
+                        <td>Resposta numérica</td>
+                        <td>25</td>
+                        <td>Difícil</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!--Lista com as respostas-->
+        <section>
+            <h2>Verifique suas respostas</h2>
+            <details>
+                <summary>Clique aqui para ver as respostas do quiz</summary>
+                <ol>
+                    <li>19</li>
+                    <li>19</li>
+                    <li></li>
+                    <li>x = 1, x = 2 e x = 3</li>
+                    <li>Arquimedes</li>
+                    <li>x = 20 e y = 30</li>
+                </ol>
+            </details>
+        </section>
+        <!--Formulario de feedback-->
+        <section> 
+            <h2>Nos dê o seu feedback</h2>
+            <form>
+                <fieldset>
+                    <legend>Informações de contato</legend>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome"><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="comentários">Comentários:</label>
+                    <textarea id="comentários" name="comentários" rows="4" cols="50" placeholder="Digite aqui seu comentário"></textarea>
+                </fieldset>
+            </form>
         </section>
     </main>
     <footer>
-
+        <p>Pagina desenvolvida por Marcos Paulo Maciel</p>
+        <p>Para conhecer mais sobre mim <a href="https://github.com/marcospaulomacieldev" target="_blank">clique aqui</a></p>
     </footer>
 </body>
 </html>
